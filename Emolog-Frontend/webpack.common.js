@@ -55,31 +55,31 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './pages/register/register.html',
-      filename: '/pages/register.html'
+      filename: 'pages/register.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/login/login.html',
-      filename: '/pages/login.html'
+      filename: 'pages/login.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/home/homepage.html',
-      filename: '/pages/home.html'
+      filename: 'pages/home.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/journaling/journaling.html',
-      filename: '/pages/journaling.html'
+      filename: 'pages/journaling.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/statistic/statistic.html',
-      filename: '/pages/statistic.html'
+      filename: 'pages/statistic.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/history/history.html',
-      filename: '/pages/history.html'
+      filename: 'pages/history.html'
     }),
     new HtmlWebpackPlugin({
       template: './pages/profile/profile.html',
-      filename: '/pages/profile.html'
+      filename: 'pages/profile.html'
     })
   ]
 };
