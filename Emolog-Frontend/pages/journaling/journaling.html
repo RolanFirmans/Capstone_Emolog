@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journaling - Emolog</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+<body id="journaling">
+ <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+         <a href="/pages/home/">
+           <img src="/assets/emologlogo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Journaling</a></li>
+                <li><a href="/pages/statistic/">Statistic</a></li>
+                <li><a href="/pages/history/">History</a></li>
+                <li><a href="/pages/profile/">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Journaling Section -->
+  <section class="journaling-container">
+    <div class="journaling-header">
+      <textarea class="judul-area" placeholder="Judul Ceritamu Hari Ini"></textarea>
+      <input type="text" id="journal-date" class="journaling-date" placeholder="Pilih tanggal..." />
+
+
+      <hr>
+      <p class="journaling-description">Tulis sebanyak atau sesedikit yang kamu mau.</p>
+    </div>
+
+    <div class="journaling-body">
+      <textarea class="journaling-textarea" placeholder="Catatan Hati: Mulai dari Sini..."></textarea>
+    </div>
+
+    <div class="journaling-footer">
+      <button class="save-btn">Simpan</button>
+    </div>
+  </section>
+  <footer class="footer-global">
+    <p>&copy; 2025 Dicoding</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#journal-date", {
+      dateFormat: "Y-m-d",
+      defaultDate: new Date()
+    });
+  </script>
+
+</body>
+</html>

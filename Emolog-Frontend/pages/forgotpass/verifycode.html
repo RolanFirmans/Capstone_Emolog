@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verification Code - Emolog</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../responsive.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .verification-container {
+      background-color: white;
+      padding: 40px 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .verification-container h1 {
+      margin-bottom: 25px;
+      font-weight: 900;
+      font-size: 28px;
+      color: #333;
+    }
+    .verification-container p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .verification-container input[type="text"] {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      letter-spacing: 10px; /* buat jarak antar digit */
+      text-align: center;
+      font-weight: 700;
+    }
+    .verification-container button {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #75c4d6;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .verification-container button:hover {
+      background-color: #5ea0b8;
+    }
+    .back-to-forgot {
+      margin-top: 20px;
+      display: inline-block;
+      color: #75c4d6;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .action-links {
+        display: flex;
+        flex-direction: column; /* Atur vertikal */
+        align-items: center;    /* Tengah horisontal */
+        gap: 10px;              /* Jarak antar link */
+        max-width: 200px;       /* Lebar maksimal container */
+        margin: 0 auto;         /* Tengah container di halaman */
+        font-size: 14px;
+    }
+
+    .action-links a {
+        color: #75c4d6;
+        text-decoration: underline;
+        cursor: pointer;
+        user-select: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="verification-container">
+    <h1>Verification Code</h1>
+    <p>Enter the 4-digit code sent to your email</p>
+    <input type="text" maxlength="4" placeholder="----" />
+    <button onclick="window.location.href='resetpass.html'">Verify</button>
+    <div class="action-links">
+        <a href="./forgotpass.html" class="back-to-forgot">Back to Forgot Password</a>
+        <a href="#" class="resend-code" onclick="resendCode(event)">Resend Code</a>
+    </div>
+  </div>
+</body>
+</html>

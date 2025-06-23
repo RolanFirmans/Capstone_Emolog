@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emolog Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="/pages/home/">
+             <img src="/assets/emologlogo.png" alt="Logo" />
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/pages/journaling/">Journaling</a></li>
+                <li><a href="/pages/statistic/">Statistic</a></li>
+                <li><a href="/pages/history/">History</a></li>
+                <li><a href="/pages/profile/">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content will be added later -->
+    <main class="main-content-home">
+        <!-- Greeting Section -->
+        <section class="greeting">
+            <div class="greeting-content">
+                <div class="greeting-text">
+                    <h1>Halo, Sandi!</h1>
+                    <h3>Selamat datang di diary AI-mu! Tempat di mana setiap cerita punya makna.</h3>
+                    <p></p>
+                    <p>Tidak ada yang harus sempurna di sini, hanya kejujuran. Suatu hari nanti, kamu bisa melihat kembali dan menyadari betapa berartinya setiap kata yang kamu tulis. Emolog siap menemanimu dalam setiap perjalanan emosimu.</p>
+                    <button class="start-journaling-btn">Mulai Menulis</button>
+                </div>
+
+                <!-- Placeholder in the same box -->
+
+                <div id="quote-box" class="placeholder">
+                    <div class="">
+                        <p>Isi jurnalmu dulu, habis itu kami kasih quotes keren buat nemenin harimu!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Diary Section -->
+        <h2 style="margin-top: 50px; font-family:'Segoe UI'; font-weight: 600;"> YOUR LATEST DIARY</h2>
+        <section class="latest-diary">
+            <div class="diary-box">
+                <div class="diary-left">
+                    <!-- Image (can be a mood icon or user image) -->
+                    <img src="/assets/calendar.jpg" alt="Mood Icon" class="diary-image">
+                </div>
+                <div class="diary-center">
+                    <!-- Diary Text -->
+                    <p class="diary-text">Hari ini aku menghabiskan 2 jam berlari di luar, lalu bermain basket bersama teman-teman. Besok, apa yang sebaiknya aku lakukan?</p>
+                </div>
+                <div class="diary-right">
+            <!-- Emoji happy above the date -->
+                    <div class="emoji-container">
+                        <div class="emoji" style="font-size: 2rem;">📌</div> <!-- Emoji default -->
+                    </div>
+            <!-- Date below the emoji -->
+                    <p class="diary-date">02 Kamis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recap A Week Section -->
+        <section class="recap-week-section">
+            <h2 class="recap-week-header">ONE  WEEK, ONE INSIGHT</h2>
+
+            <div class="recap-week-navigation">
+                <button class="nav-arrow" id="prev-week">&#10094;</button>
+                <div class="date-range">29 Jan 25 – 5 Feb 25</div>
+                <button class="nav-arrow" id="next-week">&#10095;</button>
+            </div>
+
+            <div class="recap-week-list">
+                <div class="recap-item">
+                <div class="emoji-container">
+                    <div class="emoji" style="font-size: 2rem;">😐</div> <!-- Emoji default -->
+                </div>
+                <div class="recap-text">
+                    <div class="recap-date">Senin, 9 Januari 2025</div>
+                    <div class="recap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                </div>
+
+                <div class="recap-item">
+                <div class="emoji-container">
+                    <div class="emoji" style="font-size: 2rem;">😐</div> <!-- Emoji default -->
+                </div>
+                <div class="recap-text">
+                    <div class="recap-date">Selasa, 10 Januari 2025</div>
+                    <div class="recap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                </div>
+
+                <div class="recap-item">
+                <div class="emoji-container">
+                    <div class="emoji" style="font-size: 2rem;">😐</div> <!-- Emoji default -->
+                </div>
+                <div class="recap-text">
+                    <div class="recap-date">Selasa, 10 Januari 2025</div>
+                    <div class="recap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                </div>
+
+                <div class="recap-item">
+                <div class="emoji-container">
+                    <div class="emoji" style="font-size: 2rem;">😐</div> <!-- Emoji default -->
+                </div>
+                <div class="recap-text">
+                    <div class="recap-date">Selasa, 10 Januari 2025</div>
+                    <div class="recap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                </div>
+
+                <div class="recap-item">
+                <div class="emoji-container">
+                    <div class="emoji" style="font-size: 2rem;">😐</div> <!-- Emoji default -->
+                </div>
+                <div class="recap-text">
+                    <div class="recap-date">Selasa, 10 Januari 2025</div>
+                    <div class="recap-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                </div>
+
+                <!-- Tambahkan recap-item lain sesuai kebutuhan -->
+            </div>
+        </section>
+
+        <section class="start-story-section">
+            <h2 class="start-story-header">A MOMENT TO REFLECT</h2>
+            <div class="start-story-container">
+                <div class="story-box">
+                <ul>
+                    <li><strong>Begin Today</strong></li>
+                    <p>Mulailah sekarang. Luangkan 5 menit untuk menulis di jurnalmu tentang perasaanmu hari ini atau refleksi atas apa yang telah terjadi.</p>
+                </ul>
+                </div>
+                <div class="story-box">
+                <ul>
+                    <li><strong>Keep Going</strong></li>
+                    <p>Semakin sering kamu menulis, semakin mudah jadinya. Jadikan ini kebiasaan baik setiap hari, minggu, atau bulan untuk membangun refleksi yang lebih mendalam.</p>
+                </ul>
+                </div>
+                <div class="story-box">
+                <ul>
+                    <li><strong>Embrace Your Journey</strong></li>
+                    <p>Setelah menulis, kamu akan mendapatkan kutipan inspiratif untuk menemani refleksimu!</p>
+                </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-left">
+                <img src="/assets/emologlogo.png" alt="Emolog Logo" class="footer-logo">
+                <span class="footer-title"></span>
+            </div>
+
+            <div class="footer-center">
+                <h3>Tentang Kami</h3>
+                <p>kelompok capstone CC25-CF012</p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Kontak Kami</h3>
+                <div class="contact-item">
+                    <img src="/assets/email.png" alt="Email Icon" class="contact-icon">
+                    <a href="mailto:Emolog@gmail.com">Emolog@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="/assets/insta.png" alt="Instagram Icon" class="contact-icon">
+                <a href="https://instagram.com/emolog" target="_blank">@emolog</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

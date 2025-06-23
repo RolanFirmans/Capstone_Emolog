@@ -1,0 +1,703 @@
+/* ========================================
+   RESPONSIVE CSS
+   Mobile First Approach
+======================================== */
+
+/* Mobile Devices (320px - 767px) */
+@media screen and (max-width: 767px) {
+    
+    /* Reset container untuk mobile */
+    .container, .login-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .left-side, .right-side, 
+    .login-left-side, .login-right-side {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+    }
+    
+    /* Form adjustments */
+    .input-with-icon input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .form-group input, .login-form-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    /* Navbar responsive */
+    .navbar {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar .logo img {
+        width: 120px;
+    }
+    
+    nav.nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    nav.nav ul li {
+        text-align: center;
+    }
+    
+    /* Main content adjustments */
+    .main-content-home {
+        padding: 100px 15px 40px 15px;
+    }
+    
+    .greeting {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    .greeting-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .greeting-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .greeting h1 {
+        font-size: 24px;
+    }
+    
+    .greeting p {
+        font-size: 16px;
+    }
+    
+    .placeholder {
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+    }
+    
+    /* Day streak responsive */
+    .day-streak-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .streak-left, .streak-right {
+        width: 100%;
+    }
+    
+    .streak .day {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin: 0 2px;
+    }
+    
+    /* Latest diary responsive */
+    .diary-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .diary-left, .diary-center, .diary-right {
+        flex: none;
+    }
+    
+    .diary-image {
+        width: 120px;
+    }
+    
+    .emoji {
+        width: 60px;
+    }
+    
+    /* Recap week responsive */
+    .recap-week-list {
+        gap: 10px;
+    }
+    
+    .recap-item {
+        min-width: 280px;
+        padding: 15px;
+    }
+    
+    /* Start story responsive */
+    .start-story-container {
+        flex-direction: column;
+    }
+    
+    .story-box {
+        padding: 20px;
+    }
+    
+    /* Footer responsive */
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+    }
+    
+    .footer-logo {
+        width: 150px;
+    }
+    
+    /* Journaling page responsive */
+    .journaling-container {
+        margin: 120px 15px 50px 15px;
+        padding: 1.5rem 1rem;
+        width: calc(100% - 30px);
+        max-width: none;
+    }
+    
+    .journaling-header h2 {
+        font-size: 22px;
+    }
+    
+    .judul-area {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    
+    .journaling-textarea {
+        height: 200px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .journaling-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .icon-group {
+        justify-content: center;
+    }
+    
+    /* History page responsive */
+    .main-content-history {
+        padding: 120px 15px 40px 15px;
+    }
+    
+    .calendar-grid {
+        gap: 0.25rem;
+    }
+    
+    .calendar-day {
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .mood-emoji {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+    
+    .diary-content {
+        padding: 0.75rem;
+        min-height: 80px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        padding: 0.75rem;
+    }
+    
+    /* Profile page responsive */
+    .main-content-profile {
+        padding: 120px 15px 40px 15px;
+    }
+    
+    .profile-container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .profile-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-picture {
+        margin-top: 0;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-info {
+        width: 100%;
+    }
+    
+    /* Modal responsive */
+    .modal-content {
+        width: 90%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    
+    .modal-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .save-btn, .cancel-btn {
+        width: 100%;
+    }
+    
+    /* Statistics page responsive */
+    .main-content-statistic {
+        padding: 120px 15px 40px 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stats-overview {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .mood-row {
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+    
+    .mood-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    
+    .mood-label {
+        min-width: 60px;
+        font-size: 0.875rem;
+    }
+    
+    .suggest-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .suggestion-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .trend-days {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.25rem;
+    }
+    
+    .trend-day {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .trend-emoji {
+        font-size: 1.25rem;
+    }
+    
+    /* Forgot password responsive */
+    .forgot-password-container {
+        max-width: 90% !important;
+        margin: 20px auto !important;
+        padding: 30px 20px !important;
+    }
+    
+    .forgot-password-container h1 {
+        font-size: 24px;
+    }
+}
+
+/* Tablet Devices (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    /* Container adjustments */
+    .container, .login-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .left-side, .right-side,
+    .login-left-side, .login-right-side {
+        padding: 30px;
+    }
+    
+    /* Navbar tablet */
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    .navbar .logo img {
+        width: 150px;
+    }
+    
+    nav.nav ul {
+        gap: 20px;
+    }
+    
+    /* Main content tablet */
+    .main-content-home {
+        padding: 200px 30px 40px 30px;
+    }
+    
+    .greeting {
+        margin-top: 100px;
+        padding: 30px;
+    }
+    
+    .greeting h1 {
+        font-size: 30px;
+    }
+    
+    .placeholder {
+        width: 400px;
+        height: 250px;
+    }
+    
+    /* Day streak tablet */
+    .day-streak-content {
+        gap: 15px;
+    }
+    
+    .streak-left {
+        width: 65%;
+    }
+    
+    .streak-right {
+        width: 30%;
+    }
+    
+    /* Diary responsive tablet */
+    .diary-image {
+        width: 150px;
+    }
+    
+    .emoji {
+        width: 70px;
+    }
+    
+    /* Recap week tablet */
+    .recap-item {
+        min-width: 300px;
+    }
+    
+    /* Footer tablet */
+    .footer {
+        padding: 30px 40px;
+    }
+    
+    .footer-logo {
+        width: 180px;
+    }
+    
+    /* Journaling tablet */
+    .journaling-container {
+        margin: 150px 30px 50px 30px;
+        width: calc(100% - 60px);
+    }
+    
+    .journaling-header h2 {
+        font-size: 26px;
+    }
+    
+    .journaling-textarea {
+        height: 220px;
+    }
+    
+    /* History tablet */
+    .main-content-history {
+        padding: 150px 30px 40px 30px;
+    }
+    
+    .calendar-grid {
+        gap: 0.4rem;
+    }
+    
+    .mood-emoji {
+        width: 56px;
+        height: 56px;
+    }
+    
+    /* Profile tablet */
+    .main-content-profile {
+        padding: 150px 30px 40px 30px;
+    }
+    
+    .profile-container {
+        width: 100%;
+        max-width: 700px;
+        padding: 30px;
+    }
+    
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Modal tablet */
+    .modal-content {
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    /* Statistics tablet */
+    .main-content-statistic {
+        padding: 150px 30px 40px 30px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mood-row {
+        gap: 0.75rem;
+    }
+    
+    .suggest-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .trend-days {
+        gap: 0.4rem;
+    }
+}
+
+/* Large Desktop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    
+    .container, .login-container {
+        max-width: 1000px;
+    }
+    
+    .main-content-home {
+        padding: 350px 50px 40px 50px;
+    }
+    
+    .greeting {
+        margin-top: 200px;
+    }
+    
+    .placeholder {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .journaling-container {
+        max-width: 900px;
+        margin-top: 180px;
+    }
+    
+    .main-content-history,
+    .main-content-profile,
+    .main-content-statistic {
+        padding-top: 200px;
+    }
+    
+    .profile-container {
+        max-width: 800px;
+    }
+}
+
+/* Extra Large Desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    
+    .container, .login-container {
+        max-width: 1200px;
+    }
+    
+    .main-content-home {
+        padding: 400px 60px 40px 60px;
+    }
+    
+    .greeting {
+        margin-top: 300px;
+    }
+    
+    .placeholder {
+        width: 600px;
+        height: 350px;
+    }
+    
+    .journaling-container {
+        max-width: 1000px;
+        margin-top: 200px;
+    }
+    
+    .main-content-history,
+    .main-content-profile,
+    .main-content-statistic {
+        padding-top: 250px;
+    }
+    
+    .profile-container {
+        max-width: 900px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 2.5fr 1fr;
+    }
+}
+
+/* Portrait Orientation Adjustments */
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    
+    .greeting {
+        margin-top: 30px;
+    }
+    
+    .journaling-container {
+        margin-top: 100px;
+    }
+    
+    .main-content-history,
+    .main-content-profile,
+    .main-content-statistic {
+        padding-top: 100px;
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    
+    .main-content-home {
+        padding-top: 120px;
+    }
+    
+    .greeting {
+        margin-top: 50px;
+    }
+    
+    .journaling-container {
+        margin-top: 120px;
+    }
+    
+    .main-content-history,
+    .main-content-profile,
+    .main-content-statistic {
+        padding-top: 120px;
+    }
+}
+
+/* High DPI / Retina Display Adjustments */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+    
+    .navbar .logo img,
+    .footer-logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+    
+    .profile-img,
+    .diary-image,
+    .emoji {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print Styles */
+@media print {
+    
+    .navbar,
+    .footer,
+    .btn-sign-in,
+    .save-btn,
+    .start-journaling-btn,
+    .icon-group {
+        display: none !important;
+    }
+    
+    .main-content-home,
+    .main-content-history,
+    .main-content-profile,
+    .main-content-statistic {
+        padding-top: 20px !important;
+    }
+    
+    .container,
+    .journaling-container,
+    .profile-container {
+        box-shadow: none !important;
+        border: 1px solid #000 !important;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .container,
+    .login-container,
+    .journaling-container,
+    .profile-container,
+    .card {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .form-group input,
+    .login-form-group input,
+    .journaling-textarea,
+    .judul-area {
+        background-color: #3d3d3d;
+        color: #ffffff;
+        border-color: #555;
+    }
+}

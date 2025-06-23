@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emolog - Statistic</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="/pages/home/">
+             <img src="/assets/emologlogo.png" alt="Logo" />
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/pages/journaling/">Journaling</a></li>
+                <li><a href="#" class="active">Statistic</a></li>
+                <li><a href="/pages/history/">History</a></li>
+                <li><a href="/pages/profile/">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+     <main class="main-content-statistic">
+        <div class="stats-grid">
+            <!-- Basic Stats Section -->
+            <div class="card">
+                <h2 class="section-title-stat">Basic Stats</h2>
+                <p class="section-subtitle-stat">Ringkasan mood Anda minggu ini</p>
+
+                <!-- Stats Overview -->
+                <div class="stats-overview">
+                    <div class="stat-item">
+                        <div class="stat-number">28</div>
+                        <div class="stat-label">Total Entries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Happy!</div>
+                        <div class="stat-label">Mood kamu minggu ini</div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle-stat">Mood Flow</h3>
+                <div class="mood-chart">
+                    <!-- Happy Row -->
+                    <div class="mood-row">
+                        <div class="mood-icon mood-happy">
+                            <img src="/assets/happy.png" alt="Happy Mood"/>
+                        </div>
+                        <div class="mood-label">Happy</div>
+                        <div class="chart-container">
+                            <div class="mood-bar bar-happy">75%</div>
+                        </div>
+                    </div>
+
+                    <!-- Neutral Row -->
+                    <div class="mood-row">
+                        <div class="mood-icon mood-neutral">
+                            <img src="/assets/netral.png" alt="Netral Mood"/>
+                        </div>
+                        <div class="mood-label">Neutral</div>
+                        <div class="chart-container">
+                            <div class="mood-bar bar-neutral">45%</div>
+                        </div>
+                    </div>
+
+                    <!-- Sad Row -->
+                    <div class="mood-row">
+                        <div class="mood-icon mood-sad">
+                            <img src="/assets/sad.png" alt="Sad Mood"/>
+                        </div>
+                        <div class="mood-label">Sad</div>
+                        <div class="chart-container">
+                            <div class="mood-bar bar-sad">25%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Trend -->
+                <div class="weekly-trend">
+                    <h3 class="section-subtitle-stat">Tren Mingguan</h3>
+                    <div class="trend-days">
+                        <div class="trend-day">
+                            <div class="trend-day-name">Sen</div>
+                            <div class="trend-emoji">
+                                <img src="/assets/happy.png" alt="Happy Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Sel</div>
+                            <div class="trend-emoji">
+                                <img src="/assets/happy.png" alt="Happy Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Rab</div>
+                            <div class="trend-emoji">
+                                 <img src="/assets/happy.png" alt="Happy Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Kam</div>
+                            <div class="trend-emoji">
+                                 <img src="/assets/sad.png" alt="Sad Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Jum</div>
+                            <div class="trend-emoji">
+                                 <img src="/assets/happy.png" alt="Happy Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Sab</div>
+                            <div class="trend-emoji">
+                                 <img src="/assets/happy.png" alt="Happy Mood"/>
+                            </div>
+                        </div>
+                        <div class="trend-day">
+                            <div class="trend-day-name">Min</div>
+                            <div class="trend-emoji">
+                                 <img src="/assets/netral.png" alt="Netral Mood"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer class="footer-global">
+        <p>&copy; 2025 Dicoding</p>
+    </footer>
+</body>
+</html>

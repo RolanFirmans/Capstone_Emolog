@@ -1,0 +1,47 @@
+{
+  "name": "emologcapstonefe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tesscript.js",
+  "scripts": {
+    "start": "serve dist",
+    "build": "webpack --config webpack.prod.js",
+    "preview": "serve -dist",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fadhilah2210/Emolog-FrontEnd-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fadhilah2210/Emolog-FrontEnd-/issues"
+  },
+  "homepage": "https://Fadhilah2210.github.io/Emolog-FrontEnd",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.0",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "serve": "^14.2.4",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
